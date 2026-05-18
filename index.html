@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OSPChat — LAN chat for Android</title>
+    <title>OSPChat — LAN chat for Android & Desktop</title>
     <meta
       name="description"
-      content="OSPChat is open-source peer-to-peer chat for Android. Local Wi-Fi only. No servers, no Internet, no accounts. BSD 3-Clause licensed."
+      content="OSPChat is open-source peer-to-peer chat for Android and Desktop (Linux, macOS, Windows). Local Wi-Fi only. No servers, no Internet, no accounts. BSD 3-Clause licensed."
     />
     <meta name="theme-color" content="#fafaf6" />
     <link
@@ -17,7 +17,7 @@
     <meta property="og:title" content="OSPChat" />
     <meta
       property="og:description"
-      content="Open-source LAN chat for Android. No servers, no Internet, no accounts."
+      content="Open-source LAN chat for Android and Desktop. No servers, no Internet, no accounts."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ospchat.com" />
@@ -27,13 +27,13 @@
     <meta property="og:image:type" content="image/png" />
     <meta
       property="og:image:alt"
-      content="OSPChat — open-source LAN chat for Android."
+      content="OSPChat — open-source LAN chat for Android and Desktop."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="OSPChat" />
     <meta
       name="twitter:description"
-      content="Open-source LAN chat for Android. No servers, no Internet, no accounts."
+      content="Open-source LAN chat for Android and Desktop. No servers, no Internet, no accounts."
     />
     <meta name="twitter:image" content="https://ospchat.com/og-image.png" />
 
@@ -72,21 +72,82 @@
         <h1 class="hero-title">OSPChat</h1>
 
         <p class="hero-tagline">
-          Open-source LAN chat for Android.<br />
+          Open-source LAN chat for Android &amp; Desktop.<br />
           <span class="hero-tagline-soft"
             >No servers, no Internet, no accounts.</span
           >
         </p>
 
-        <a
-          class="hero-cta"
-          href="https://github.com/tb0hdan/ospchat-android"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get it on GitHub
-          <span class="hero-cta-arrow" aria-hidden="true">→</span>
-        </a>
+        <div class="hero-ctas">
+          <a
+            class="hero-cta"
+            href="https://github.com/tb0hdan/ospchat-android"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Android
+            <span class="hero-cta-arrow" aria-hidden="true">→</span>
+          </a>
+          <a
+            class="hero-cta hero-cta-secondary"
+            href="https://github.com/tb0hdan/ospchat-desktop"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Desktop
+            <span class="hero-cta-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="platforms" aria-labelledby="platforms-label">
+        <div class="section-label" id="platforms-label">
+          <span class="section-label-bar" aria-hidden="true"></span>
+          <span>Platforms</span>
+        </div>
+
+        <ul class="platform-list" role="list">
+          <li class="platform-card">
+            <div class="platform-head">
+              <h2 class="platform-title">Android</h2>
+              <span class="platform-tag">Mobile</span>
+            </div>
+            <p class="platform-text">
+              The original OSPChat client. Built with Kotlin and Jetpack
+              Compose for phones and tablets on Android 9+.
+            </p>
+            <a
+              class="platform-link"
+              href="https://github.com/tb0hdan/ospchat-android"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/tb0hdan/ospchat-android
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+
+          <li class="platform-card">
+            <div class="platform-head">
+              <h2 class="platform-title">Desktop</h2>
+              <span class="platform-tag platform-tag-new">New</span>
+            </div>
+            <p class="platform-text">
+              Cross-platform client for Linux, macOS, and Windows. Talks to
+              your Android peers on the same Wi-Fi — same protocol, same
+              network, no bridge required.
+            </p>
+            <a
+              class="platform-link"
+              href="https://github.com/tb0hdan/ospchat-desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/tb0hdan/ospchat-desktop
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section class="features" aria-labelledby="capabilities-label">
@@ -160,13 +221,23 @@
 
     <footer>
       <span class="footer-text">© 2026 Bohdan Turkynevych · BSD 3-Clause</span>
-      <a
-        class="footer-link"
-        href="https://github.com/tb0hdan/ospchat-android"
-        target="_blank"
-        rel="noopener noreferrer"
-        >github.com/tb0hdan/ospchat-android ↗</a
-      >
+      <span class="footer-links">
+        <a
+          class="footer-link"
+          href="https://github.com/tb0hdan/ospchat-android"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ospchat-android ↗</a
+        >
+        <span class="footer-sep" aria-hidden="true">·</span>
+        <a
+          class="footer-link"
+          href="https://github.com/tb0hdan/ospchat-desktop"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ospchat-desktop ↗</a
+        >
+      </span>
     </footer>
   </body>
 </html>
